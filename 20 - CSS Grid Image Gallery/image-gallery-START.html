@@ -47,7 +47,7 @@
 
     .close {
       background: none;
-      color: white;
+      color: black;
       border: 0;
     }
 
@@ -133,13 +133,15 @@
       left: 0;
       display: none;
       z-index: 2;
+      align-items: center;
+      justify-items: center;
     }
 
     .overlay.open {
       display: grid;
     }
 
-    .overlay figure {
+    .overlay-inner {
       background: white;
       width: 700px;
       padding: 20px;
@@ -193,11 +195,13 @@
 
     overlayClose.addEventListener('click', close);
 
+    // hide the modal when pressing "escape"
     document.addEventListener('keyup', function(e) {
       if (e.key === "Escape") {
         close();
       }
     })
+
   </script>
 </body>
 
