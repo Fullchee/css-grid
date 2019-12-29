@@ -97,6 +97,30 @@
 
 
   <style>
+    .albums {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      grid-gap: 20px;
+      align-content: center;
+    }
+
+    .album {
+      display: grid;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 20px;
+      /* I confused this with grid-column (which is the child prop) */
+      grid-template-columns: 150px 1fr;
+      align-items: center; 
+    }
+
+    .album__artwork {
+      width: 100%;  /* sizes itself based on the parent, not its natural size*/ 
+      /* width: 150px */
+      padding-right: 20px;
+    }
+    .album__details {
+      color: rgba(255, 255, 255, 0.7);
+    }
   </style>
 </body>
 
