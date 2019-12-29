@@ -30,6 +30,26 @@
       min-width: 100px;
       border-radius: 10px;
     }
+
+    /* FLEXBOX */
+    /* .controls {
+      display: flex;
+    }
+    .scrubber {
+      flex: 1;
+      align-self: center;
+    } */
+
+    /* CSS GRID */
+    .controls {
+      display: grid;
+      /* wes says this can only be hard-coded */
+      grid-template-columns: auto auto auto 1fr auto auto;
+    }
+
+    .scrubber {
+      align-self: center;
+    }
   </style>
 
 </body>

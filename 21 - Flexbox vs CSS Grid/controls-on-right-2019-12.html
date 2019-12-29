@@ -55,6 +55,28 @@
       background: white;
       padding: 10px;
       border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    }
+
+    /* Flexbox */
+    /* .track {
+      display: flex;
+      justify-content: flex-end;
+    }
+    .track h2 {
+      margin-right: auto;
+    } */
+
+
+    /* CSS Grid */
+    .track {
+      display: grid;
+      /* basically hardcoded */
+      /* grid-template-columns: 5fr 50px 50px 50px; */
+      /* wow! Grid might be more elegant here! */
+      grid-auto-flow: column;
+      grid-template-columns: 1fr;
+      /* why does it go into the new  */
     }
   </style>
 </body>
