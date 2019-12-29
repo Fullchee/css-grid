@@ -15,7 +15,7 @@
   <script>
     function flip(e) {
       const flipper = document.querySelector('.flipper');
-      flipper.classList.toggle('flip');
+      flipper.classList.toggle('horizontal');
     }
   </script>
 
@@ -35,6 +35,16 @@
   </div>
 
   <style>
+    /* flexbox just needs flex-direction: row vs column */
+    .flipper {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+    }
+    .flipper.horizontal {
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      grid-template-rows: 1fr;
+    }
   </style>
 </body>
 
