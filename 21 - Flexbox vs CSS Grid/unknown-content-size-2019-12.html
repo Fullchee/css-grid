@@ -16,13 +16,19 @@
     <div class="item">Short</div>
     <div class="item">Longerrrrrr</div>
     <div class="item">
-      <img src="https://source.unsplash.com/300x200" alt="">m
+      <img src="https://source.unsplash.com/300x200" alt="">
     </div>
     <div class="item">💩</div>
   </div>
 
   <style>
     .known {
+      /* display: flex;
+      justify-content: space-between; */
+      display: grid;
+      /* grid-template-columns: repeat(4, auto); */
+      grid-auto-flow: column;
+      justify-content: space-between;
       margin: 100px 0;
     }
   </style>
