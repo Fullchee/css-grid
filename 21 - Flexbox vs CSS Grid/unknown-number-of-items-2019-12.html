@@ -24,7 +24,17 @@
   </div>
 
   <style>
-    .unknown {}
+    .unknown {
+      display: grid;
+      /* use the default grid-auto-flow: row
+      we want the new items to be added in the next row
+      not in the overflow on the right
+       grid-auto-flow: column;
+      */
+       grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+      /* grid-template-rows: 50px;*/
+      grid-gap: 20px;
+    }
   </style>
 </body>
 
