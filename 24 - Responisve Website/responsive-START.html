@@ -102,6 +102,16 @@
   </div>
 
   <script>
+    const menuButton = document.querySelector('button[aria-expanded]');
+    menuButton.addEventListener('click', (event) => {
+      const isExpanded = menuButton.getAttribute("aria-expanded");
+      if (isExpanded === "false") {
+        menuButton.setAttribute('aria-expanded', "true");
+      }
+      else {
+        menuButton.setAttribute('aria-expanded', "false");
+      }
+    });
   </script>
   
 </body>
